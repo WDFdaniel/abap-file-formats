@@ -12,7 +12,5 @@
     "typeOfMaintenanceDialog": "individual",
     "exitFunctionModule": "F4_PFCG_SICF"
   },
-  "searchHelp": {
-    "typeOfSearchHelp": "searchHelpOfDataElement"
-  }
+  "searchHelp": {}
 }

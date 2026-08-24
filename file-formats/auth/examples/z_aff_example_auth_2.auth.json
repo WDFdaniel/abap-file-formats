@@ -9,7 +9,6 @@
     "orgLevelInfo": "Field cannot be defined as Organizational level."
   },
   "maintenanceDialog": {
-    "typeOfMaintenanceDialog": "standard",
     "objectOwnMaintDialog": true
   },
   "searchHelp": {

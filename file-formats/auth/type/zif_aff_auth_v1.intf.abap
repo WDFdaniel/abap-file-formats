@@ -4,7 +4,6 @@ INTERFACE zif_aff_auth_v1
   TYPES:
     "! <p class="shorttext">General Information</p>
     "! General information
-    "! $required
     BEGIN OF ty_general_information,
       "! <p class="shorttext">Data Element</p>
       "! Name of the data element
@@ -37,7 +36,6 @@ INTERFACE zif_aff_auth_v1
     BEGIN OF ty_maintenance_dialog,
       "! <p class="shorttext">Type of Maintenance Dialog</p>
       "! Type of maintenance dialog
-      "! $required
       type_of_maintenance_dialog TYPE ty_type_of_maintenance_dialog,
       "! <p class="shorttext">Exit Function Module</p>
       "! The authorization field uses an individual maintenance dialog that is implemented in the named function module
@@ -70,14 +68,12 @@ INTERFACE zif_aff_auth_v1
   TYPES:
     "! <p class="shorttext">Search Help</p>
     "! Search help
-    "! $required
     BEGIN OF ty_search_help,
       "! <p class="shorttext">Check Table</p>
       "! Check table
       check_table              TYPE c LENGTH 30,
       "! <p class="shorttext">Type of Search Help</p>
-      "! Type of search help
-      "! $required
+      "! If no check table is maintained, the search help of data element is used in standard maintenance dialog.
       type_of_search_help      TYPE ty_type_of_search_help,
       "! <p class="shorttext">Some Authorization Objects use an Object Field Search Help</p>
       "! If the search help for an authorization field returns unsuitable selection results in a particular
@@ -101,15 +97,12 @@ INTERFACE zif_aff_auth_v1
       header              TYPE zif_aff_types_v1=>ty_header_60,
       "! <p class="shorttext">General Information</p>
       "! General information
-      "! $required
       general_information TYPE ty_general_information,
       "! <p class="shorttext">Maintenance Dialog</p>
       "! Maintenance dialog
-      "! $required
       maintenance_dialog  TYPE ty_maintenance_dialog,
       "! <p class="shorttext">Search Help in Standard Maintenance Dialog</p>
       "! Search help in standard maintenance dialog
-      "! $required
       search_help         TYPE ty_search_help,
     END OF ty_main.
 ENDINTERFACE.

@@ -115,10 +115,7 @@
           "type": "boolean"
         }
       },
-      "additionalProperties": false,
-      "required": [
-        "typeOfMaintenanceDialog"
-      ]
+      "additionalProperties": false
     },
     "searchHelp": {
       "title": "Search Help in Standard Maintenance Dialog",
@@ -133,7 +130,7 @@
         },
         "typeOfSearchHelp": {
           "title": "Type of Search Help",
-          "description": "Type of search help",
+          "description": "If no check table is maintained, the search help of data element is used in standard maintenance dialog.",
           "type": "string",
           "enum": [
             "searchHelpOfDataElement",
@@ -155,18 +152,12 @@
           "type": "boolean"
         }
       },
-      "additionalProperties": false,
-      "required": [
-        "typeOfSearchHelp"
-      ]
+      "additionalProperties": false
     }
   },
   "additionalProperties": false,
   "required": [
     "formatVersion",
-    "header",
-    "generalInformation",
-    "maintenanceDialog",
-    "searchHelp"
+    "header"
   ]
 }
