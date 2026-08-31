@@ -8,7 +8,6 @@
     "dataElement": "PLVAR",
     "orgLevelInfo": "Field is defined as Organizational level with Variable $PLVAR."
   },
-  "maintenanceDialog": {},
   "searchHelp": {
     "checkTable": "T778P",
     "typeOfSearchHelp": "checkTable"
