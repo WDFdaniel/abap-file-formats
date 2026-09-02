@@ -94,7 +94,7 @@ INTERFACE zif_aff_auth_v1
       "! <p class="shorttext">Header</p>
       "! Header
       "! $required
-      header              TYPE zif_aff_types_v1=>ty_header_60,
+      header              TYPE zif_aff_types_v1=>ty_header_60_cloud,
       "! <p class="shorttext">General Information</p>
       "! General information
       general_information TYPE ty_general_information,
