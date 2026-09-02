@@ -52,7 +52,7 @@ INTERFACE zif_aff_suso_v1
 
   "! <p class="shorttext">Authorization Fields</p>
   "! Authorization fields
-  TYPES ty_authorization_fields TYPE STANDARD TABLE OF ty_authorization_field WITH DEFAULT KEY.
+  TYPES ty_authorization_fields TYPE SORTED TABLE OF ty_authorization_field WITH UNIQUE KEY authorization_field.
 
   "! $values {@link zif_aff_suso_v1.data:co_access_category}
   "! $default {@link zif_aff_suso_v1.data:co_access_category.not_classified}
@@ -99,13 +99,14 @@ INTERFACE zif_aff_suso_v1
 
   "! <p class="shorttext">Permitted Activities</p>
   "! Permitted activities
-  TYPES ty_permitted_activities TYPE STANDARD TABLE OF ty_permitted_activity WITH DEFAULT KEY.
+  TYPES ty_permitted_activities TYPE SORTED TABLE OF ty_permitted_activity WITH UNIQUE KEY activity.
 
   "! $values {@link zif_aff_suso_v1.data:co_criticality}
   "! $default {@link zif_aff_suso_v1.data:co_criticality.not_critical}
   TYPES ty_criticality          TYPE c LENGTH 1.
   CONSTANTS:
     "! <p class="shorttext">Criticality</p>
+    "! Criticality
     BEGIN OF co_criticality,
       "! <p class="shorttext">Critical</p>
       "! Critical
@@ -120,6 +121,7 @@ INTERFACE zif_aff_suso_v1
   TYPES ty_class_copy_to_default_data TYPE c LENGTH 1.
   CONSTANTS:
     "! <p class="shorttext">Classification for Copy to Default Data</p>
+    "! Classification for copy to default data
     BEGIN OF co_class_copy_to_default_data,
       "! <p class="shorttext">Without Restriction</p>
       "! Without restriction

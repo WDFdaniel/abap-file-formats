@@ -84,6 +84,7 @@
       "title": "Authorization Fields",
       "description": "Authorization fields",
       "type": "array",
+      "uniqueItems": true,
       "items": {
         "title": "Authorization Fields",
         "description": "Authorization fields",
@@ -123,6 +124,7 @@
       "title": "Permitted Activities",
       "description": "Permitted activities",
       "type": "array",
+      "uniqueItems": true,
       "items": {
         "title": "Permitted Activities",
         "description": "Permitted activities",
